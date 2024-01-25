@@ -1,38 +1,3 @@
-/* Description: Master CSS file */
-
-/*****************************************
-Table Of Contents:
-- General Styles
-- Navigation
-- Header
-- About
-- Services
-- Details
-- Projects
-- Works
-- Testimonials
-- Questions
-- Contact
-- Footer 
-- Copyright
-- Back To Top Button
-- Extra Pages
-- Media Queries
-******************************************/
-
-/*****************************************
-Colors:
-- Backgrounds, navbar - black #24262a
-- Backgrounds - light gray #f7f9fb
-- Buttons, icons - blue #0b36a8
-- Headings text - black #24262a
-- Body text - dark gray #4d5055
-******************************************/
-
-
-/**************************/
-/*     General Styles     */
-/**************************/
 body,
 html {
     width: 100%;

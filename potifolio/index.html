@@ -491,7 +491,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h2>Contact details</h2>
-                    <p class="p-heading">For any type of online project please don't hesitate to get in touch with me. The fastest way is to send me your message using the following email <a class="blue no-line" href="#your-link">contact@domain.com</a></p>
+                    <p class="p-heading">For any type of online project please don't hesitate to get in touch with me. The fastest way is to send me your message using the following email <a class="blue no-line" href="#">sulaite256@gmail.com</a></p>
 
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -499,7 +499,7 @@
                 <div class="col-lg-12">
                     
                     <!-- Contact Form -->
-                    <form id="contactForm">
+                    <form action="/submit.php" method="get">
                         <div class="form-group">
                             <input type="text" class="form-control-input" id="cname" required>
                             <label class="label-control" for="cname">Name</label>
@@ -532,33 +532,22 @@
                 <div class="col-lg-12">
                     <div class="social-container">
                         <span class="fa-stack">
-                            <a href="#your-link">
+                            <a href="https://www.facebook.com/mulindwa.sulait.9/">
                                 <i class="fas fa-circle fa-stack-2x"></i>
                                 <i class="fab fa-facebook-f fa-stack-1x"></i>
                             </a>
                         </span>
                         <span class="fa-stack">
-                            <a href="#your-link">
+                            <a href="https://twitter.com/MSulaite38056">
                                 <i class="fas fa-circle fa-stack-2x"></i>
                                 <i class="fab fa-twitter fa-stack-1x"></i>
                             </a>
                         </span>
+                        
                         <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-pinterest-p fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a href="#your-link">
+                            <a href="https://www.instagram.com/sula_sulait/">
                                 <i class="fas fa-circle fa-stack-2x"></i>
                                 <i class="fab fa-instagram fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-youtube fa-stack-1x"></i>
                             </a>
                         </span>
 
@@ -584,6 +573,29 @@
             <div class="row">
                 <div class="col-lg-12">
                     <p class="p-small">Copyright © <a class="no-line" href="#your-link">mulindwa sulait</a></p>
+
+
+
+
+                    <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+                        <div class="row">
+                          <label class="required" for="name">Your name:</label><br />
+                          <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+                          <span id="name_validation" class="error_message"></span>
+                        </div>
+                        <div class="row">
+                          <label class="required" for="email">Your email:</label><br />
+                          <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+                          <span id="email_validation" class="error_message"></span>
+                        </div>
+                        <div class="row">
+                          <label class="required" for="message">Your message:</label><br />
+                          <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+                          <span id="message_validation" class="error_message"></span>
+                        </div>
+                          
+                          <input id="submit_button" type="submit" value="Send email" />
+                      </form>
                 </div> <!-- end of col -->
             </div> <!-- enf of row -->
         </div> <!-- end of container -->
@@ -599,5 +611,6 @@
     <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
     <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
     <script src="js/scripts.js"></script> <!-- Custom scripts -->
+    
 </body>
 </html>
